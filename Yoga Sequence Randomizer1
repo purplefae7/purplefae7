@@ -1,0 +1,33 @@
+import random
+
+def randomize_poses(poses):
+    """Randomizes the order of the given poses.
+
+    Args:
+        poses: A list of yoga poses.
+
+    Returns:
+        A randomly shuffled list of yoga poses.
+    """
+
+    random.shuffle(poses)
+    return poses
+
+def get_random_pose(poses):
+    """Returns a random pose from the given list.
+
+    Args:
+        poses: A list of yoga poses.
+
+    Returns:
+        A random yoga pose.
+    """
+
+    return random.choice(poses)
+
+# Example usage
+poses = ["Ustrasana", "Virabadrasana1", "Virabadrasana2", "Virabadrasana3", "Baddha Konasana", "Apanasana", "Pavana Muktasana", "ardha matsyendrasana", "setu bandha sarvangasana", "vrkshasana", "viparita karani", "ekapadakapotasana", "jathara parivartasana", "dhanurasana", "adho mukha svanasana", "utkatasana", "trikonasana", "shalabhasana", "ardha shalabhasana", "halasana", "parivritta trikonasana", "anjaneyasana", "janu sirsasana", "parivritta janu sirsasana", "savasana", "uttanasana", "sarvangasana", "uttitha parsvakonasana", "matsyasana", "prasarita padottanasana", "urdhva mukha svanasana", "paschimottanasana", "paripurna navasana", "shashasana", "ardha navasana", "tadasana", "ardha chandrasana", "bharadvajasana", "bhaktasana", "balasana", "bhujangasana", "parighasana", "parsvottanasana", "dandasana", "natarajasana", "sirsasana", "upavista konasana"]
+randomized_poses = randomize_poses(poses)
+
+for pose in randomized_poses:
+    print(pose)
